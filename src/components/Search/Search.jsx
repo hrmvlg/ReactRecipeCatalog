@@ -26,7 +26,7 @@ export default function Search({ cb = Function.prototype }) {
                     value={value}
                 />
                 <button
-                    className="btn search__button"
+                    className="waves-effect waves-light btn orange darken-4 search__button"
                     onClick={handleSubmit}
                 >Search</button>
             </div>

@@ -10,7 +10,6 @@ export default function Home() {
     const [catalog, setCatalog] = useState([]);
     const [loading, setLoading] = useState(true);
     const [filteredCatalog, setFilteredCatalog] = useState([]);
-
     const [searchParams, setSearchParams] = useSearchParams();
 
     const handleSearch = (str) => {
@@ -40,7 +39,7 @@ export default function Home() {
             {loading ? (
                 <Preloader />
             ) : (
-                <CategoriesList catalog={filteredCatalog} />
+                <CategoriesList catalog={filteredCatalog.length > 0 ? filteredCatalog : catalog} />
             )}
         </div>
     )

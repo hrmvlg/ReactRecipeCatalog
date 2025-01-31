@@ -9,6 +9,12 @@ nav {
     margin: auto;
 }
 
+.search__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .categories-list {
     display: flex;
     flex-wrap: wrap;
@@ -68,15 +74,15 @@ nav {
     font-size: 20px;
 }
 
-.measures__list{
+.measures__list {
     text-align: right;
     text-transform: lowercase;
 }
 
-.ingredients__list{
+.ingredients__list {
     text-transform: capitalize;
 }
 
-.ingredients__item{
+.ingredients__item {
     border-bottom: 1px solid gray;
 }
