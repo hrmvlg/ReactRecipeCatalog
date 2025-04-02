@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export default function CategoriesItem({ name, img, description }) {
+export default function CategoriesItem({ name, img, description, path }) {
 
     return (
         <li className="card">
@@ -13,7 +13,7 @@ export default function CategoriesItem({ name, img, description }) {
             </div>
             <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">
-                    <Link to={`categories/${name}`}>{name}</Link>
+                    <Link to={`${path}/${name}`}>{name}</Link>
                     <i className="material-icons right">more_vert</i>
                 </span>
             </div>

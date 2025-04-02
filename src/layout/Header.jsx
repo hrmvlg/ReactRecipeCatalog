@@ -4,7 +4,7 @@ import Breadcrumbs from './Breadcrumbs';
 export default function Header() {
 
     const { pathname } = useLocation();
-
+    console.log(pathname);
     return (
         <header>
             <nav className="yellow darken-2">
@@ -20,7 +20,10 @@ export default function Header() {
                 </div>
             </nav>
             {
-                pathname === '/' ? '' : <Breadcrumbs pathname={pathname} />
+                (pathname === '/') ||
+                    pathname === ('/categories/') ||
+                    pathname === ('/categories')
+                    ? '' : <Breadcrumbs pathname={pathname} />
             }
         </header>
     )

@@ -1,7 +1,9 @@
 import CategoriesItem from './CategoryItem';
+import { useLocation } from 'react-router-dom';
 
 export default function CategoriesList({ catalog }) {
 
+    const { pathname } = useLocation();
 
     return (
         <ul className="categories categories-list">
@@ -13,6 +15,7 @@ export default function CategoriesList({ catalog }) {
                         name={el.strCategory}
                         img={el.strCategoryThumb}
                         description={el.strCategoryDescription}
+                        path={pathname}
                     />
                 ))
             }
