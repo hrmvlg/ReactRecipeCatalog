@@ -12,10 +12,10 @@ function App() {
     <>
       <Header />
       {/* <Breadcrumbs /> */}
-      <Routes  basename='/ReactRecipeCatalog'>
+      <Routes>
         <Route index element={<Home />} />
-        <Route path='categories/:category' element={<Category />} />
-        <Route path='meal/:mealId' element={<Meal />} />
+        <Route path='/categories/:category' element={<Category />} />
+        <Route path='/meal/:mealId' element={<Meal />} />
       </Routes>
       <Footer />
     </>
