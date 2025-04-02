@@ -11,11 +11,10 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Breadcrumbs /> */}
       <Routes>
         <Route index element={<Home />} />
         <Route path='/categories/:category' element={<Category />} />
-        <Route path='/meal/:mealId' element={<Meal />} />
+        <Route path='/categories/:category/:mealId' element={<Meal />} />
       </Routes>
       <Footer />
     </>

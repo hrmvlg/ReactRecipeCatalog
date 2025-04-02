@@ -2,6 +2,12 @@ nav {
     padding-inline: 20px;
 }
 
+.breadcrumb,
+.breadcrumb:last-child,
+.breadcrumb::before {
+    color: black;
+}
+
 .content {
     min-height: calc(100vh - 70px - 64px);
     padding: 1.5rem 0;
