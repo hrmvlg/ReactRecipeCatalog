@@ -4,7 +4,7 @@ import Breadcrumbs from './Breadcrumbs';
 export default function Header() {
 
     const { pathname } = useLocation();
-    console.log(pathname);
+    
     return (
         <header>
             <nav className="yellow darken-2">
