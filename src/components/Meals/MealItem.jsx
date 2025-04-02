@@ -4,7 +4,7 @@ export default function MealItem({ id, name, img }) {
     return (
         <li className="card">
             <div className="card-image waves-effect waves-block waves-light">
-                <img className="activator" src={img} />
+                <img className="activator" src={img} width={320} height={200} />
             </div>
             <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">
