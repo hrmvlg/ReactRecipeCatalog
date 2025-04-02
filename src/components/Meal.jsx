@@ -8,6 +8,7 @@ import MeasuresList from "./Ingredients/MeasuresList";
 export default function Meal() {
 
     const { mealId } = useParams();
+    
     const [meal, setMeal] = useState([]);
 
     useEffect(() => {
@@ -47,7 +48,6 @@ export default function Meal() {
     } = meal;
 
     const vidUrlToEmbed = (videoUrl) => {
-        console.log(videoUrl, videoUrl.replace("watch?v=", "embed/"));
         return (videoUrl.replace("watch?v=", "embed/"));
     }
 

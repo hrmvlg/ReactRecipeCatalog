@@ -1,15 +1,23 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 
-export default function Breadcrumbs() {
+export default function Breadcrumbs({ pathname }) {
 
-    // const { pathname } = useLocation();
-    // const pathnames = pathname.split("/").filter((x) => x)
+    const pathnames = pathname.split("/").filter((x) => x);
 
     return (
-        <nav>
+        <nav className="orange accent-1">
             <div className="nav-wrapper">
                 <div className="col s12">
-                    <Link to="/"></Link>
+                    {
+                        pathnames.map((item, index) => {
+                            let link = pathnames.slice(0, index + 1).join("/");
+                            return (
+                                <Link to={link === 'categories' ? '/' : link} key={index} className="breadcrumb">
+                                    {item === 'categories' ? 'Categories' : item}
+                                </Link>
+                            );
+                        })
+                    }
                 </div>
             </div>
         </nav>
