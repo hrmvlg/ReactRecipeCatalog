@@ -1,8 +1,75 @@
-# React + Vite
+# Каталог рецептов на React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание
 
-Currently, two official plugins are available:
+Петпроект каталог рецептов, созданный с использованием React и Vite. Для получения данных о фильмах используется API TheMealDB. Проект демонстрирует основные возможности работы с внешним API, состояниями и роутами.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Основной функционал
+
+- Просмотр списка основных ингредиентов.
+- Просмотр списка блюд по ингредианту.
+- Просмотр рецепта блюда.
+- Поиск основного инредиента/названия блюда по названию.
+
+## Используемые технологии
+
+- **React**: Для построения пользовательского интерфейса.
+- **React Router**: Для работы с роутами.
+- **Vite**: Для быстрой сборки и разработки проекта.
+- **Fetch**: Для работы с API.
+- [**MaterializeCSS**]((https://materializecss.com/about.html)): Для стилизации компонентов.
+- [**TheMealDB API**](https://www.themealdb.com/api.php): Для получения данных.
+
+## Установка и запуск
+
+### Предварительные требования
+
+- Установленный **Node.js**.
+- Менеджер пакетов (**npm** или **yarn**).
+
+### Инструкция
+
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/hrmvlg/ReactRecipeCatalog.git
+   ```
+2. Перейдите в папку проекта:
+   ```bash
+   cd ReactRecipeCatalog
+   ```
+3. Установите зависимости:
+   ```bash
+   npm install
+   # или
+   yarn install
+   ```
+
+4. Запустите проект в режиме разработки:
+   ```bash
+   npm run dev
+   # или
+   yarn dev
+   ```
+
+5. Откройте localhost в вашем браузере.
+
+## Сборка для продакшена
+
+Для сборки приложения выполните:
+```bash
+npm run build
+# или
+yarn build
+```
+
+Собранные файлы будут находиться в папке `build`.
+
+## Контакты
+
+Если у вас есть вопросы или предложения, вы можете связаться со мной:
+
+- **Email**: olya.hrmvlg@gmail.com
+- **GitHub**: [hrmvlg](https://github.com/hrmvlg)
+
+
+## **Посестить сайт вы можете [здесь](https://hrmvlg.github.io/ReactRecipeCatalog/)**
