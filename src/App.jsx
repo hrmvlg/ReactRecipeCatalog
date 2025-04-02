@@ -4,7 +4,6 @@ import Home from './components/Home.jsx';
 import Category from './components/Category';
 import Meal from './components/Meal.jsx';
 import { Route, Routes } from 'react-router-dom';
-// import Breadcrumbs from './layout/Breadcrumbs.jsx';
 
 function App() {
 
@@ -13,6 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Home />} />
+        <Route path='/categories/' element={<Home />} />
         <Route path='/categories/:category' element={<Category />} />
         <Route path='/categories/:category/:mealId' element={<Meal />} />
       </Routes>
