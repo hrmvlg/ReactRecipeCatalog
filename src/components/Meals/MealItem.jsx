@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function MealItem({ mealId, name, img, path }) {
-
+export default function MealItem({ mealId, name, img }) {
     return (
         <li className="card">
             <div className="card-image waves-effect waves-block waves-light">
@@ -14,7 +13,7 @@ export default function MealItem({ mealId, name, img, path }) {
             </div>
             <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">
-                    <Link to={`${path}/${mealId}`}>{name}</Link>
+                    <Link to={`${mealId}`}>{name}</Link>
                 </span>
             </div>
         </li>

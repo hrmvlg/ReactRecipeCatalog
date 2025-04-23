@@ -13,7 +13,7 @@ export default function CategoriesItem({ name, img, description, path }) {
             </div>
             <div className="card-content">
                 <span className="card-title activator grey-text text-darken-4">
-                    <Link to={`${path}/${name}`}>{name}</Link>
+                    <Link to={`categories/${name}`}>{name}</Link>
                     <i className="material-icons right">more_vert</i>
                 </span>
             </div>
