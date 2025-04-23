@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Breadcrumbs from './Breadcrumbs';
 
 export default function Header() {
@@ -9,7 +9,7 @@ export default function Header() {
         <header>
             <nav className="yellow darken-2">
                 <div className="nav-wrapper">
-                    <a href="/" className="brand-logo left">React Recipe Catalog</a>
+                    <Link to='/' className="brand-logo left">React Recipe Catalog</Link>
                     <ul id="nav-mobile" className="right">
                         <li>
                             <a href="https://github.com/hrmvlg/ReactRecipeCatalog">
